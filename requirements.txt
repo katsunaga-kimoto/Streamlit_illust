@@ -1,16 +1,16 @@
-# Streamlit
-streamlit>=1.39,<1.41
+# Streamlit は Pillow 12 を許可する版に
+streamlit>=1.42,<2.0
 streamlit-drawable-canvas==0.9.3
 
 # 画像処理
 opencv-python-headless>=4.10,<5
 Pillow>=12,<13
 
-# 数値計算（Py3.13 対応）
-numpy>=2.0,<3
+# 数値計算（Py3.13対応）
+numpy>=2,<3
 scipy>=1.14,<2
 
-# PyTorch (CPU) ─ Py3.13 対応の組み合わせ
+# PyTorch (CPU) ─ Python 3.13 対応の安定ペア
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.7.1+cpu
 torchvision==0.22.1+cpu
