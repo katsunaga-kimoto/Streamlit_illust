@@ -1,0 +1,15 @@
+# venv / キャッシュ
+.venv311*/
+venv*/
+__pycache__/
+*.pyc
+*.pyo
+
+# 大きい生成物
+*.pth
+*.pt
+*.onnx
+.DS_Store
+
+# Streamlit
+.streamlit/secrets.toml
