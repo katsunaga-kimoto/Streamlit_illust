@@ -1,7 +1,7 @@
 # streamlit run this_file.py
 import base64, io, importlib
 import streamlit as st
-from streamlit_drawable_canvas_fork import st_canvas
+from streamlit_drawable_canvas import st_canvas
 from streamlit.elements import image as _st_image
 import numpy as np
 from PIL import Image, Image as _PILImage

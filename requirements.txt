@@ -1,10 +1,18 @@
-streamlit>=1.32,<1.41
+# Streamlit 本体
+streamlit>=1.38,<1.41
 streamlit-drawable-canvas==0.9.3
-opencv-python-headless>=4.8,<5
-Pillow>=10.0.0
-numpy==1.26.*
-scipy>=1.10
 
+# 画像系
+opencv-python-headless>=4.10,<5
+Pillow>=11,<13
+
+# 数値計算（Py3.13 対応版に更新）
+numpy>=2.0,<3
+scipy>=1.14,<2
+
+# PyTorch (CPU) - 公式CPUホイール
+--index-url https://pypi.org/simple
 --extra-index-url https://download.pytorch.org/whl/cpu
-torch==2.3.1
-torchvision==0.18.1
+torch==2.5.1+cpu
+# torchvision を使っていなければ入れないでOK。使うなら下も追加
+# torchvision==0.20.1+cpu
